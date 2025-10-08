@@ -1,4 +1,12 @@
 ---
+# Source: cert-manager/templates/cert-manager-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cert-manager
+  labels:
+    app: cert-manager
+---
 # Source: cert-manager/templates/cainjector-serviceaccount.yaml
 apiVersion: v1
 kind: ServiceAccount
